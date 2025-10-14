@@ -22,9 +22,85 @@ const Header = () => {
                             About Us
                             </Link>
                         </li>
-                        <li className='flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
-                          Insurance Products 
-                          <ChevronDown className='w-5 h-5'/>
+                        <li className='relative group flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
+                          <span className='flex items-center gap-1 group-hover:text-[#6C63FF]'>
+                            Insurance Products
+                            <ChevronDown className='w-5 h-5 transition-transform duration-200 group-hover:rotate-180'/>
+                          </span>
+                          <div className='invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 ease-out absolute left-1/2 -translate-x-1/2 top-full mt-3 z-50'>
+                            <div className='bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 w-[1000px] max-w-[90vw]'>
+                              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 p-6 text-gray-700'>
+                                <div>
+                                  <h4 className='font-semibold text-gray-900 mb-3'>Car Insurance</h4>
+                                  <ul className='space-y-1.5 text-sm'>
+                                    <li><Link href='/insurance/car/comprehensive' className='block py-1.5 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>Comprehensive Car</Link></li>
+                                    <li><Link href='/insurance/car/third-party' className='block py-1.5 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>Third-Party Liability</Link></li>
+                                    <li><Link href='/insurance/car/zero-dep' className='block py-1.5 hover:text-[#6C63FF]'>Zero Depreciation</Link></li>
+                                    <li><Link href='/insurance/car/return-to-invoice' className='block py-1.5 hover:text-[#6C63FF]'>Return to Invoice</Link></li>
+                                    <li><Link href='/insurance/car/engine-protect' className='block py-1.5 hover:text-[#6C63FF]'>Engine Protect</Link></li>
+                                    <li><Link href='/insurance/car/roadside' className='block py-1.5 hover:text-[#6C63FF]'>Roadside Assistance</Link></li>
+                                    <li><Link href='/insurance/car/no-claim-bonus' className='block py-1.5 hover:text-[#6C63FF]'>No Claim Bonus</Link></li>
+                                    <li><Link href='/insurance/car/personal-accident' className='block py-1.5 hover:text-[#6C63FF]'>Personal Accident Cover</Link></li>
+                                    <li><Link href='/insurance/car/addons' className='block py-1.5 hover:text-[#6C63FF]'>Add-ons & Riders</Link></li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <h4 className='font-semibold text-gray-900 mb-3'>Term & Investment Plans</h4>
+                                  <ul className='space-y-1.5 text-sm'>
+                                    <li className='flex items-center gap-2'><Link href='/insurance/life/term' className='block py-1.5 hover:text-[#6C63FF]'>Pure Term Plan</Link><span className='text-[10px] px-1.5 py-0.5 rounded-full bg-green-100 text-green-700'>New</span></li>
+                                    <li><Link href='/insurance/life/return-of-premium' className='block py-1.5 hover:text-[#6C63FF]'>Return of Premium</Link></li>
+                                    <li><Link href='/insurance/life/ulip' className='block py-1.5 hover:text-[#6C63FF]'>ULIP (Market-linked)</Link></li>
+                                    <li><Link href='/insurance/life/endowment' className='block py-1.5 hover:text-[#6C63FF]'>Endowment Plans</Link></li>
+                                    <li><Link href='/insurance/life/money-back' className='block py-1.5 hover:text-[#6C63FF]'>Money Back Plans</Link></li>
+                                    <li><Link href='/insurance/life/whole-life' className='block py-1.5 hover:text-[#6C63FF]'>Whole Life Cover</Link></li>
+                                    <li><Link href='/insurance/life/child' className='block py-1.5 hover:text-[#6C63FF]'>Child Education Plans</Link></li>
+                                    <li><Link href='/insurance/life/pension' className='block py-1.5 hover:text-[#6C63FF]'>Pension/Annuity Plans</Link></li>
+                                    <li><Link href='/insurance/life/saral-jeevan' className='block py-1.5 hover:text-[#6C63FF]'>Saral Jeevan Bima</Link></li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <h4 className='font-semibold text-gray-900 mb-3'>Health Insurance</h4>
+                                  <ul className='space-y-1.5 text-sm'>
+                                    <li><Link href='/insurance/health/individual' className='block py-1.5 hover:text-[#6C63FF]'>Individual Health</Link></li>
+                                    <li><Link href='/insurance/health/family-floater' className='block py-1.5 hover:text-[#6C63FF]'>Family Floater</Link></li>
+                                    <li className='flex items-center gap-2'><Link href='/insurance/health/senior-citizen' className='block py-1.5 hover:text-[#6C63FF]'>Senior Citizen Cover</Link><span className='text-[10px] px-1.5 py-0.5 rounded-full bg-green-100 text-green-700'>New</span></li>
+                                    <li><Link href='/insurance/health/top-up' className='block py-1.5 hover:text-[#6C63FF]'>Top-up/Super Top-up</Link></li>
+                                    <li><Link href='/insurance/health/critical-illness' className='block py-1.5 hover:text-[#6C63FF]'>Critical Illness</Link></li>
+                                    <li><Link href='/insurance/health/maternity' className='block py-1.5 hover:text-[#6C63FF]'>Maternity Cover</Link></li>
+                                    <li><Link href='/insurance/health/opd' className='block py-1.5 hover:text-[#6C63FF]'>OPD & Preventive Care</Link></li>
+                                    <li><Link href='/insurance/health/cashless' className='block py-1.5 hover:text-[#6C63FF]'>Cashless Hospitals</Link></li>
+                                    <li><Link href='/insurance/health/ayush' className='block py-1.5 hover:text-[#6C63FF]'>AYUSH Treatment</Link></li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <h4 className='font-semibold text-gray-900 mb-3'>Travel Insurance</h4>
+                                  <ul className='space-y-1.5 text-sm'>
+                                    <li><Link href='/insurance/travel/international' className='block py-1.5 hover:text-[#6C63FF]'>International Travel</Link></li>
+                                    <li><Link href='/insurance/travel/student' className='block py-1.5 hover:text-[#6C63FF]'>Student Travel</Link></li>
+                                    <li><Link href='/insurance/travel/business' className='block py-1.5 hover:text-[#6C63FF]'>Business Travel</Link></li>
+                                    <li><Link href='/insurance/travel/domestic' className='block py-1.5 hover:text-[#6C63FF]'>Domestic Travel</Link></li>
+                                    <li className='flex items-center gap-2'><Link href='/insurance/travel/cruise' className='block py-1.5 hover:text-[#6C63FF]'>Cruise Cover</Link><span className='text-[10px] px-1.5 py-0.5 rounded-full bg-green-100 text-green-700'>New</span></li>
+                                    <li><Link href='/insurance/travel/baggage' className='block py-1.5 hover:text-[#6C63FF]'>Baggage Loss</Link></li>
+                                    <li><Link href='/insurance/travel/trip-cancel' className='block py-1.5 hover:text-[#6C63FF]'>Trip Cancellation</Link></li>
+                                    <li><Link href='/insurance/travel/medical-emergency' className='block py-1.5 hover:text-[#6C63FF]'>Medical Emergencies</Link></li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <h4 className='font-semibold text-gray-900 mb-3'>Business Insurance</h4>
+                                  <ul className='space-y-1.5 text-sm'>
+                                    <li><Link href='/insurance/business/fire' className='block py-1.5 hover:text-[#6C63FF]'>Fire & Property</Link></li>
+                                    <li><Link href='/insurance/business/marine' className='block py-1.5 hover:text-[#6C63FF]'>Marine Cargo</Link></li>
+                                    <li><Link href='/insurance/business/workmen' className='block py-1.5 hover:text-[#6C63FF]'>Workmen Compensation</Link></li>
+                                    <li><Link href='/insurance/business/liability' className='block py-1.5 hover:text-[#6C63FF]'>General Liability</Link></li>
+                                    <li><Link href='/insurance/business/professional' className='block py-1.5 hover:text-[#6C63FF]'>Professional Indemnity</Link></li>
+                                    <li className='flex items-center gap-2'><Link href='/insurance/business/cyber' className='block py-1.5 hover:text-[#6C63FF]'>Cyber Risk</Link><span className='text-[10px] px-1.5 py-0.5 rounded-full bg-green-100 text-green-700'>New</span></li>
+                                    <li><Link href='/insurance/business/group-health' className='block py-1.5 hover:text-[#6C63FF]'>Group Health</Link></li>
+                                    <li><Link href='/insurance/business/group-personal-accident' className='block py-1.5 hover:text-[#6C63FF]'>Group Personal Accident</Link></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </li>
                         <li className='flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
                           Renew Your Policy 
