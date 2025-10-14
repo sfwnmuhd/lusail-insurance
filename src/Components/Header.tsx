@@ -1,14 +1,27 @@
-import { ChevronDown, PhoneIncoming } from 'lucide-react'
+'use client'
+import { ChevronDown, PhoneIncoming, Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
+  const [mobileOpen, setMobileOpen] = React.useState(false)
+  const [expandInsurance, setExpandInsurance] = React.useState(false)
+  const [expandRenew, setExpandRenew] = React.useState(false)
   return (
-    <header className='bg-[#8B1538] sticky z-50 top-0 '>
+    <header className='bg-[#8B1538] sticky z-50 top-0 relative'>
       <div className="container mx-auto px-6 sm:px-20 py-2   ">
         <div className='flex items-center justify-between h-20 '>
             <div className='flex items-center justify-center'>
+                <button
+                  type='button'
+                  className='lg:hidden mr-3 text-white p-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#4B1EFF] focus-visible:ring-offset-[#8B1538]'
+                  aria-expanded={mobileOpen}
+                  aria-controls='mobile-menu'
+                  onClick={() => setMobileOpen(!mobileOpen)}
+                >
+                  {mobileOpen ? <X size={24}/> : <Menu size={24}/>}
+                </button>
                 <Link href={"/"}>
                     <Image src={"/logo.png"} alt='Lusail Insurance' width={250} height={80}
                       className='w-32 md:w-48 lg:w-52 h-auto'
@@ -132,6 +145,69 @@ const Header = () => {
             </button>
         </div>
       </div>
+      {mobileOpen && (
+        <div id='mobile-menu' className='lg:hidden absolute left-0 right-0 top-full bg-white rounded-b-2xl shadow-2xl ring-1 ring-black/5'>
+          <nav className='px-6 sm:px-20 py-4'>
+            <ul className='space-y-2 text-gray-800 text-base'>
+              <li>
+                <Link href='/about' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <button
+                  type='button'
+                  className='w-full flex items-center justify-between px-2 py-2 rounded-md hover:bg-gray-50 focus:outline-none'
+                  aria-expanded={expandInsurance}
+                  onClick={() => setExpandInsurance(!expandInsurance)}
+                >
+                  <span>Insurance Products</span>
+                  <ChevronDown className={`w-5 h-5 transition-transform ${expandInsurance ? 'rotate-180' : ''}`}/>
+                </button>
+                {expandInsurance && (
+                  <ul className='mt-1 ml-4 space-y-1 text-sm text-gray-700'>
+                    <li><Link href='/insurance/car' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Car Insurance</Link></li>
+                    <li><Link href='/insurance/life' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Term & Investment Plans</Link></li>
+                    <li><Link href='/insurance/health' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Health Insurance</Link></li>
+                    <li><Link href='/insurance/travel' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Travel Insurance</Link></li>
+                    <li><Link href='/insurance/business' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Business Insurance</Link></li>
+                  </ul>
+                )}
+              </li>
+              <li>
+                <button
+                  type='button'
+                  className='w-full flex items-center justify-between px-2 py-2 rounded-md hover:bg-gray-50 focus:outline-none'
+                  aria-expanded={expandRenew}
+                  onClick={() => setExpandRenew(!expandRenew)}
+                >
+                  <span>Renew Your Policy</span>
+                  <ChevronDown className={`w-5 h-5 transition-transform ${expandRenew ? 'rotate-180' : ''}`}/>
+                </button>
+                {expandRenew && (
+                  <ul className='mt-1 ml-4 space-y-1 text-sm text-gray-700'>
+                    <li><Link href='/renew/term-life' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Term Life Renewal</Link></li>
+                    <li><Link href='/renew/health' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Health Renewal</Link></li>
+                    <li><Link href='/renew/motor' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Motor Renewal</Link></li>
+                    <li><Link href='/renew/two-wheeler' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Two Wheeler Renewal</Link></li>
+                    <li><Link href='/renew/home-insurance' className='block px-2 py-1.5 rounded hover:text-[#6C63FF]'>Home Insurance Renewal</Link></li>
+                  </ul>
+                )}
+              </li>
+              <li>
+                <Link href='/claims' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>
+                  Claims
+                </Link>
+              </li>
+              <li>
+                <Link href='/branches' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>
+                  Branches
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   )
 }
