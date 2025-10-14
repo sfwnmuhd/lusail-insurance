@@ -22,12 +22,12 @@ const Header = () => {
                             About Us
                             </Link>
                         </li>
-                        <li className='relative group flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
+                        <li className='relative group flex gap-1 items-center cursor-pointer'>
                           <span className='flex items-center gap-1 group-hover:text-[#6C63FF]'>
                             Insurance Products
-                            <ChevronDown className='w-5 h-5 transition-transform duration-200 group-hover:rotate-180'/>
+                            <ChevronDown className='w-5 h-5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180'/>
                           </span>
-                          <div className='invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 ease-out absolute left-1/2 -translate-x-1/2 top-full mt-3 z-50'>
+                          <div className='invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-200 ease-out absolute left-1/2 -translate-x-1/2 top-full mt-3 z-50'>
                             <div className='bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 w-[1000px] max-w-[90vw]'>
                               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 p-6 text-gray-700'>
                                 <div>
@@ -102,9 +102,22 @@ const Header = () => {
                             </div>
                           </div>
                         </li>
-                        <li className='flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
-                          Renew Your Policy 
-                          <ChevronDown className='w-5 h-5'/>
+                        <li className='relative group flex gap-1 items-center cursor-pointer'>
+                          <button type='button' className='flex items-center gap-1 group-hover:text-[#6C63FF] focus:outline-none'>
+                            Renew Your Policy
+                            <ChevronDown className='w-5 h-5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180'/>
+                          </button>
+                          <div className='invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-200 ease-out absolute left-1/2 -translate-x-1/2 top-full mt-3 z-50'>
+                            <div className='bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 w-[320px] max-w-[90vw]'>
+                              <ul className='p-4 text-gray-700 text-sm'>
+                                <li><Link href='/renew/term-life' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>Term Life Renewal</Link></li>
+                                <li><Link href='/renew/health' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>Health Renewal</Link></li>
+                                <li><Link href='/renew/motor' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>Motor Renewal</Link></li>
+                                <li><Link href='/renew/two-wheeler' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>Two Wheeler Renewal</Link></li>
+                                <li><Link href='/renew/home-insurance' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>Home Insurance Renewal</Link></li>
+                              </ul>
+                            </div>
+                          </div>
                         </li>
                         <li className='flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
                           Claims
