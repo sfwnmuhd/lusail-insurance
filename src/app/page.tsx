@@ -8,7 +8,7 @@ import Testimonials from '@/Components/Testimonials'
 import WhyChooseUs from '@/Components/WhyChooseUs'
 import React from 'react'
 
-const page = () => {
+export default function Page() {
   return (
     <main className='min-h-screen '>
       <HeroSection/>
@@ -21,5 +21,3 @@ const page = () => {
     </main>
   )
 }
-
-export default page

@@ -13,7 +13,7 @@ const ContactSection = () => {
               Here to help.
             </h2>
             <p className='text-sm md:text-base text-gray-700 leading-relaxed mb-8 max-w-md'>
-              At Lusail Insurance we're committed to being an extended family. Speak your heart out. They listen with undivided attention to resolve your concerns. Love us or not, request a callback or drop us an email, we're here to help.
+              At Lusail Insurance we&apos;re committed to being an extended family. Speak your heart out. They listen with undivided attention to resolve your concerns. Love us or not, request a callback or drop us an email, we&apos;re here to help.
             </p>
             
             <div className='space-y-4 max-w-md'>
