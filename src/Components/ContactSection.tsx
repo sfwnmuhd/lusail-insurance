@@ -4,7 +4,7 @@ import { Phone, MessageSquare } from 'lucide-react'
 const ContactSection = () => {
   return (
     <section className='bg-[#F0E4E4] py-12 md:py-20'>
-      <div className='container mx-auto px-4'>
+      <div className='container mx-auto px-20'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
           {/* Left content */}
           <div>

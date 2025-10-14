@@ -1,11 +1,11 @@
 
-import ContactSection from '@/components/ContactSection'
-import HeroSection from '@/components/HeroSection'
-import InsuranceProducts from '@/components/insuranceProducts'
-import Partners from '@/components/Partners'
-import ServiceCards from '@/components/ServiceCards'
-import Testimonials from '@/components/Testimonials'
-import WhyChooseUs from '@/components/WhyChooseUs'
+import ContactSection from '@/Components/ContactSection'
+import HeroSection from '@/Components/HeroSection'
+import InsuranceProducts from '@/Components/insuranceProducts'
+import Partners from '@/Components/Partners'
+import {ServiceCards} from '@/Components/ServiceCards'
+import Testimonials from '@/Components/Testimonials'
+import WhyChooseUs from '@/Components/WhyChooseUs'
 import React from 'react'
 
 const page = () => {

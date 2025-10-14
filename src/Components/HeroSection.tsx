@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className=' container mx-auto px-4 py-4 '>
+    <section className=' container mx-auto px-6 sm:px-20 py-4 '>
       {/* top content */}
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center'>
             {/* left content */}
@@ -13,14 +13,14 @@ const HeroSection = () => {
                     the <span className='font-medium'>Best Insurance in </span>
                     <span className='font-bold'>Qatar</span>
                 </h1>
-                <div className='flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12'>
+                <div className='flex flex-row items-start sm:items-center gap-12 sm:gap-12'>
                     <div className='flex gap-4 items-center'>
                         <div className='w-12 h-12 flex-shrink-0'>
                             <Image src={"/tick.png"} alt='tick' width={100} height={100}/>
                         </div>
                         
                         <div>
-                            <p className='text-base md:text-lg lg:text-xl text-[#8B1538] leading-relaxed'>
+                            <p className='text-base  text-[#8B1538] leading-relaxed'>
                             10+ insurers offering <br />
                             Competitive prices
                             </p>
@@ -32,7 +32,7 @@ const HeroSection = () => {
                         </div>
                         
                         <div>
-                            <p className='text-base md:text-lg lg:text-xl text-[#8B1538] leading-relaxed'>
+                            <p className='text-base  text-[#8B1538] leading-relaxed'>
                             Quick, easy &<br />
                             hassle free 
                             </p>
@@ -41,12 +41,12 @@ const HeroSection = () => {
                 </div>
             </div>
             {/* right content */}
-            <div className='lg:col-span-5 flex justify-end  items-end'>
+            <div className='lg:col-span-5 flex sm:justify-end justify-center items-center  sm:items-end'>
                 <Image
                     src="/bg.png"
                     alt="bg"
-                    width={450}
-                    height={120}
+                    width={350}
+                    height={100}
                     className="object-contain"
                 />
                 

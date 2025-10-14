@@ -18,7 +18,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className='bg-[#F0E4E4] py-12 md:py-16'>
-      <div className='container mx-auto px-4'>
+      <div className='container mx-auto px-'>
         <h2 className='text-2xl md:text-3xl lg:text-4xl mb-12'>
           What Our Customers<br />Are Saying
         </h2>

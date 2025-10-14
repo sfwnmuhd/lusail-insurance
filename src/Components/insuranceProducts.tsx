@@ -63,7 +63,7 @@ const products = [
 
 const InsuranceProducts = () => {
     return(
-        <section className="container mx-auto px-4 py-6 ">
+        <section className="container mx-auto px-6 sm:px-20 py-6 ">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6">
                 {
                     products.map((product, index)=>(
@@ -71,12 +71,12 @@ const InsuranceProducts = () => {
                             key={index}
                             
                         >
-                            <div className="flex flex-col items-center gap-3 p-4 rounded-2xl bg-[#F0E4E4] hover:bg-[#e8d8d8] transition-colors cursor-pointer">
+                            <div className="flex flex-col items-center gap-3 p-4 rounded-2xl bg-[#F0E4E4] hover:bg-[#e8d8d8] transition-colors cursor-pointer mb-1">
                                 <div className="relative w-12 h-12 flex items-center justify-center">
                                     {product.icon}
                                 </div>
                             </div>
-                            <p className="text-center">
+                            <p className="text-center text-sm">
                                 {product.name}
                             </p>
                             
@@ -86,6 +86,11 @@ const InsuranceProducts = () => {
                         
                     ))
                 }
+            </div>
+            <div className='text-center mt-8'>
+                <button className='px-6 py-2 border border-[#8B1538] text-[#8B1538] rounded-full hover:bg-[#8B1538] hover:text-white transition-colors text-sm md:text-base'>
+                View all products
+                </button>
             </div>
         </section>
     )
