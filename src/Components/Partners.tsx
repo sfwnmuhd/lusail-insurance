@@ -16,7 +16,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section className='container mx-auto px-20 py-12 md:py-20'>
+    <section className='container mx-auto px-4 sm:px-6 lg:px-20 py-12 md:py-20'>
       <div className='text-center mb-4'>
         <h2 className='text-2xl md:text-3xl lg:text-6xl mb-2'>Our Partners</h2>
         <p className='text-sm md:text-base text-gray-600'>Leading insurers for your financial freedom</p>

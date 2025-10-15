@@ -10,7 +10,7 @@ const Header = () => {
   const [expandRenew, setExpandRenew] = React.useState(false)
   return (
     <header className='bg-[#8B1538] sticky z-50 top-0 '>
-      <div className="container mx-auto px-6 sm:px-20 py-2   ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-20 py-2   ">
         <div className='flex items-center justify-between h-20 '>
             <div className='flex items-center justify-center'>
                 <button
@@ -73,10 +73,15 @@ const Header = () => {
                           </div>
                         </li>
                         <li className='flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
-                          Claims
-                          
+                          <Link href={"/claims"}>
+                            Claims
+                          </Link>
                         </li>
-                        <li className='items-center  hover:opacity-80 transition-opacity cursor-pointer'>Branches</li>
+                        <li className='items-center  hover:opacity-80 transition-opacity cursor-pointer'>
+                          <Link href={"/branches"}>
+                            Branches
+                          </Link>
+                        </li>
                     </ul>
             </nav>
             <button 
@@ -89,7 +94,7 @@ const Header = () => {
       </div>
       {mobileOpen && (
         <div id='mobile-menu' className='lg:hidden absolute left-0 right-0 top-full bg-white rounded-b-2xl shadow-2xl ring-1 ring-black/5'>
-          <nav className='px-6 sm:px-20 py-4'>
+          <nav className='px-4 sm:px-6 lg:px-20 py-4'>
             <ul className='space-y-2 text-gray-800 text-base'>
               <li>
                 <Link href='/about' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF]  focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>

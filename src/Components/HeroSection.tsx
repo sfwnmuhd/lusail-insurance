@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className=' container mx-auto px-6 sm:px-20 py-4 '>
+    <section className=' container mx-auto px-4 sm:px-6 lg:px-20 py-4 '>
       {/* top content */}
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center'>
             {/* left content */}
@@ -13,7 +13,7 @@ const HeroSection = () => {
                     the <span className='font-medium'>Best Insurance in </span>
                     <span className='font-bold'>Qatar</span>
                 </h1>
-                <div className='flex flex-row items-start sm:items-center gap-12 sm:gap-12'>
+                <div className='flex flex-row items-start sm:items-center gap-4 sm:gap-8 lg:gap-12'>
                     <div className='flex gap-4 items-center'>
                         <div className='w-12 h-12 flex-shrink-0'>
                             <Image src={"/tick.png"} alt='tick' width={100} height={100}/>

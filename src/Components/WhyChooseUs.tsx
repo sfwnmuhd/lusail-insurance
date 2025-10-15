@@ -42,14 +42,14 @@ const Bullet = () => (
 
 const WhyChooseUs = () => {
   return (
-    <section className='container mx-auto px-3 sm:px-20 py-12 md:py-20'>
+    <section className='container mx-auto px-4 sm:px-6 lg:px-20 py-12 md:py-20'>
       <h2 className='text-2xl md:text-3xl lg:text-6xl text-center mb-10 max-w-5xl mx-auto leading-tight '>
         What makes <span className='font-bold'>Lusail Insurance</span> one of <br />
          <span className='font-bold'>Qatar&apos;s favourite places</span> <br /> to <span className='font-bold'>buy insurance?</span>
       </h2>
 
       {/* 3-column layout with centered image */}
-      <div className='mt-10 grid grid-cols-2 lg:grid-cols-[1fr_auto_1fr] gap-10 lg:gap-16'>
+      <div className='mt-10 grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-16'>
         {/* Left column */}
         <div className='space-y-8 md:space-y-10 max-w-[380px] w-full justify-self-start mx-auto lg:mx-0'>
           {features.slice(0, 3).map((feature) => (
