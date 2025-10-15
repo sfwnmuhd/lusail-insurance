@@ -13,7 +13,7 @@ const HeroSection = () => {
                     the <span className='font-medium'>Best Insurance in </span>
                     <span className='font-bold'>Qatar</span>
                 </h1>
-                <div className='flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8 lg:gap-12'>
+                <div className='flex flex-row items-start sm:items-center gap-4 sm:gap-8 lg:gap-12'>
                     <div className='flex gap-4 items-center'>
                         <div className='w-12 h-12 flex-shrink-0'>
                             <Image src={"/tick.png"} alt='tick' width={100} height={100}/>
