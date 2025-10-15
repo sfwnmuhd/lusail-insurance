@@ -71,7 +71,7 @@ const InsuranceProducts = () => {
                             key={index}
                             
                         >
-                            <div className="flex flex-col items-center gap-3 p-4 rounded-2xl bg-[#F0E4E4] hover:bg-[#e8d8d8] transition-colors cursor-pointer mb-1">
+                            <div className="flex flex-col items-center gap-3 p-4 rounded-2xl bg-[#F0E4E4]  transition-colors cursor-pointer mb-1">
                                 <div className="relative w-12 h-12 flex items-center justify-center">
                                     {product.icon}
                                 </div>

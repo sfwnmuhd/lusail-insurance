@@ -113,10 +113,10 @@ const Footer3 = () => {
       <div className="mx-auto  px-20  container">
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-            <Image src={"/logo.png"} alt='Lusail Insurance' width={250} height={80}
-                                  className='w-32 md:w-48 lg:w-52 h-auto'
+            <Image src={"/logo.png"} alt='Lusail Insurance' width={350} height={150}
+                                  className='w-32 md:w-48 lg:w-62 h-auto'
              />
-            <p className="py-8 text-sm text-gray-500 dark:text-gray-400 lg:max-w-xs text-center lg:text-left">
+            <p className="py-8 text-sm text-white lg:max-w-xs text-center lg:text-left">
               Trusted in more than 100 countries & 5 million customers. Have any
               query ?
             </p>
@@ -131,7 +131,7 @@ const Footer3 = () => {
           {/* Link Columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title} className="lg:mx-auto text-left">
-              <h4 className="text-lg text-gray-900 dark:text-white font-medium mb-7 capitalize">
+              <h4 className="text-lg text-white font-medium mb-7 capitalize">
                 {title}
               </h4>
               <ul className="text-sm transition-all duration-500">
@@ -142,7 +142,7 @@ const Footer3 = () => {
                   >
                     <a
                       href={link.href}
-                      className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                      className="text-gray-300"
                     >
                       {link.name}
                     </a>
@@ -156,11 +156,11 @@ const Footer3 = () => {
         {/* Bottom Bar */}
         <div className="py-7 border-t border-gray-200 ">
           <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-            <span className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-sm text-gray-300">
               ©{" "}
               <a
                 href="#"
-                className="hover:text-indigo-600 dark:hover:text-indigo-400"
+                
               >
                 Lusail Insurance
               </a>{" "}

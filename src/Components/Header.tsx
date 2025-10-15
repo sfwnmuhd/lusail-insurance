@@ -9,7 +9,7 @@ const Header = () => {
   const [expandInsurance, setExpandInsurance] = React.useState(false)
   const [expandRenew, setExpandRenew] = React.useState(false)
   return (
-    <header className='bg-[#8B1538] sticky z-50 top-0 relative'>
+    <header className='bg-[#8B1538] sticky z-50 top-0 '>
       <div className="container mx-auto px-6 sm:px-20 py-2   ">
         <div className='flex items-center justify-between h-20 '>
             <div className='flex items-center justify-center'>
@@ -36,7 +36,7 @@ const Header = () => {
                             </Link>
                         </li>
                         <li className='relative group flex gap-1 items-center cursor-pointer'>
-                          <span className='flex items-center gap-1 group-hover:text-[#6C63FF]'>
+                          <span className='flex items-center gap-1 group-hover:opacity-80 transition-opacity'>
                             Insurance Products
                             <ChevronDown className='w-5 h-5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180'/>
                           </span>
@@ -116,7 +116,7 @@ const Header = () => {
                           </div>
                         </li>
                         <li className='relative group flex gap-1 items-center cursor-pointer'>
-                          <button type='button' className='flex items-center gap-1 group-hover:text-[#6C63FF] focus:outline-none'>
+                          <button type='button' className='flex items-center gap-1 group-hover:opacity-80  cursor-pointer transition-opacity focus:outline-none'>
                             Renew Your Policy
                             <ChevronDown className='w-5 h-5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180'/>
                           </button>

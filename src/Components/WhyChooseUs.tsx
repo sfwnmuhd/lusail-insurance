@@ -4,27 +4,33 @@ import Image from 'next/image'
 const features = [
   {
     title: 'Expert Advice',
-    description: 'Helping you choose the right coverage with complete transparency.'
+    description: 'Helping you choose the right coverage with complete transparency.',
+    icon: '/advice.svg'
   },
   {
     title: 'Quick Quotes',
-    description: 'Compare, select, and get insured - all in just a few clicks.'
+    description: 'Compare, select, and get insured - all in just a few clicks.',
+    icon: '/quick.svg'
   },
   {
     title: 'Smart Deals',
-    description: 'Get competitive rates from leading insurers across Qatar.'
+    description: 'Get competitive rates from leading insurers across Qatar.',
+    icon: '/smart.svg'
   },
   {
     title: 'Always Here for You',
-    description: 'Our dedicated team ensures smooth assistance from quote to claim.'
+    description: 'Our dedicated team ensures smooth assistance from quote to claim.',
+    icon: '/support.svg'
   },
   {
     title: 'Insurance Made Clear',
-    description: 'We simplify insurance terms so you know exactly what you\'re getting.'
+    description: 'We simplify insurance terms so you know exactly what you\'re getting.',
+    icon: '/customer-info.svg'
   },
   {
     title: 'Trusted Across Qatar',
-    description: 'Proudly serving individuals and businesses with excellence and integrity.'
+    description: 'Proudly serving individuals and businesses with excellence and integrity.',
+    icon: '/trusted.svg'
   }
 ]
 
@@ -37,9 +43,9 @@ const Bullet = () => (
 const WhyChooseUs = () => {
   return (
     <section className='container mx-auto px-3 sm:px-20 py-12 md:py-20'>
-      <h2 className='text-2xl md:text-3xl lg:text-4xl text-center mb-6 max-w-4xl mx-auto leading-tight'>
-        What makes <span className='font-medium'>Lusail Insurance</span> one of <br />
-         Qatar&apos;s favourite places <br /> to buy insurance?
+      <h2 className='text-2xl md:text-3xl lg:text-6xl text-center mb-10 max-w-5xl mx-auto leading-tight '>
+        What makes <span className='font-bold'>Lusail Insurance</span> one of <br />
+         <span className='font-bold'>Qatar&apos;s favourite places</span> <br /> to <span className='font-bold'>buy insurance?</span>
       </h2>
 
       {/* 3-column layout with centered image */}
@@ -50,7 +56,7 @@ const WhyChooseUs = () => {
             <div key={feature.title} className='flex gap-1 sm:gap-4 items-start'>
               <Bullet />
               <div className='flex-1'>
-                <h3 className='text-base md:text-lg font-semibold mb-1'>{feature.title}</h3>
+                <h3 className='text-base md:text-xl  mb-1'>{feature.title}</h3>
                 <p className='text-[10px] md:text-sm text-gray-700 leading-relaxed'>{feature.description}</p>
               </div>
             </div>
@@ -74,8 +80,8 @@ const WhyChooseUs = () => {
           {features.slice(3, 6).map((feature) => (
             <div key={feature.title} className='flex gap-1 sm:gap-4 items-start'>
               <Bullet />
-              <div className='flex-1'>
-                <h3 className='text-base md:text-lg font-semibold mb-1'>{feature.title}</h3>
+              <div className='flex-1 '>
+                <h3 className='text-base md:text-xl mb-1'>{feature.title}</h3>
                 <p className='text-[10px] md:text-sm text-gray-700 leading-relaxed'>{feature.description}</p>
               </div>
             </div>
