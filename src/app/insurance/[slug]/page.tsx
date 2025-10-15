@@ -92,7 +92,7 @@ export default function InsuranceProductPage({ params }: { params: { slug: strin
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-center gap-3 mb-6">
                 <ShieldCheck className="text-[#8B1538]" size={28} />
-                <h2 className="text-2xl font-bold text-gray-900">What's Covered</h2>
+                <h2 className="text-2xl font-bold text-gray-900">What&apos;s Covered</h2>
               </div>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {product.coverage.map((item, index) => (
@@ -115,7 +115,7 @@ export default function InsuranceProductPage({ params }: { params: { slug: strin
                 <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center" data-testid="success-message">
                   <CheckCircle2 className="text-green-600 mx-auto mb-3" size={48} />
                   <h4 className="text-lg font-semibold text-green-800 mb-2">Thank You!</h4>
-                  <p className="text-green-700">We've received your request. Our team will contact you within 24 hours.</p>
+                  <p className="text-green-700">We&apos;ve received your request. Our team will contact you within 24 hours.</p>
                   <button
                     onClick={() => setSubmitted(false)}
                     className="mt-4 text-[#8B1538] hover:underline text-sm"

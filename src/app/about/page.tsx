@@ -25,7 +25,7 @@ export default function AboutPage() {
                 We recognized the need for transparent, customer-centric insurance solutions that truly protect what matters most.
               </p>
               <p>
-                Over the years, we've grown from a small startup to one of Qatar's most trusted insurance providers, 
+                Over the years, we&apos;ve grown from a small startup to one of Qatar&apos;s most trusted insurance providers, 
                 serving thousands of individuals and businesses across the nation. Our success is built on our 
                 unwavering commitment to customer satisfaction and innovative insurance solutions.
               </p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-white/90 leading-relaxed">
-                To be Qatar's leading digital insurance platform, recognized for innovation, transparency, and 
+                To be Qatar&apos;s leading digital insurance platform, recognized for innovation, transparency, and 
                 customer satisfaction. We envision a future where everyone has access to the protection they need 
                 through seamless digital experiences and personalized insurance solutions.
               </p>
@@ -87,7 +87,7 @@ export default function AboutPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-3">Trust & Integrity</h3>
             <p className="text-gray-600">
               We build lasting relationships through honest communication, transparent practices, and unwavering 
-              commitment to our customers' best interests.
+              commitment to our customers best interests.
             </p>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-shadow">

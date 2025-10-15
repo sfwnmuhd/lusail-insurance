@@ -141,7 +141,7 @@ export default function BranchesPage() {
 
         {/* Contact CTA */}
         <div className="mt-12 bg-gradient-to-r from-[#8B1538] to-[#6B1028] text-white rounded-2xl shadow-lg p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Can't Visit Our Branch?</h2>
+          <h2 className="text-3xl font-bold mb-4">Can&apos;t Visit Our Branch?</h2>
           <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
             No problem! Get in touch with us via phone or email, and our team will be happy to assist you remotely.
           </p>

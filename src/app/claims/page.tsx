@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle2, FileText, Phone, Mail, Clock, Upload } from 'lucide-react';
+import { CheckCircle2, FileText, Phone, Mail, Clock} from 'lucide-react';
 import { useState } from 'react';
 
 type ClaimForm = {
@@ -69,7 +69,7 @@ export default function ClaimsPage() {
             <h1 className="text-4xl md:text-5xl font-bold">File a Claim</h1>
           </div>
           <p className="text-xl text-white/90 max-w-3xl">
-            We're here to help you through the claims process. File your claim online and our team will assist you every step of the way.
+            We&apos;re here to help you through the claims process. File your claim online and our team will assist you every step of the way.
           </p>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function ClaimsPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Claim Settlement</h3>
-                    <p className="text-gray-600">Once approved, we'll process your claim and settle it according to your policy terms.</p>
+                    <p className="text-gray-600">Once approved, we&apos;ll process your claim and settle it according to your policy terms.</p>
                   </div>
                 </div>
               </div>

@@ -1,9 +1,9 @@
-import {Car, HeartPlus, LifeBuoy, Plane, Ship, Home, Users, Shield, Wrench, Building, FileText, Anchor, Clock} from "lucide-react"
+import {Car, HeartPlus, LifeBuoy, Plane, Ship, Home, Users, Shield, Wrench, Building, FileText, Anchor, Clock, LucideIcon} from "lucide-react"
 
 export type InsuranceProduct = {
     name: string;
     slug: string;
-    icon: any;
+    icon: LucideIcon;
     description: string;
     benefits: string[];
     coverage: string[];

@@ -35,14 +35,14 @@ export default function DelayedLeadForm({ delayMs = 7000 }: { delayMs?: number }
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const [form, setForm] = useState({ name: "", email: "", message: "" , product: "", phone: ""});
-  const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("");
+  // const [loading, setLoading] = useState(false);
+  // const [status, setStatus] = useState("");
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
+    // setLoading(true);
 
     const res = await fetch("/api/send-email", {
       method: "POST",
@@ -51,8 +51,8 @@ export default function DelayedLeadForm({ delayMs = 7000 }: { delayMs?: number }
     });
 
     const data = await res.json();
-    setLoading(false);
-    setStatus(data.message);
+    // setLoading(false);
+    // setStatus(data.message);
   };
 
 

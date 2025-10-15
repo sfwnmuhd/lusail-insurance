@@ -39,7 +39,7 @@ const FloatingWhatsApp = () => {
                 </div>
                 <div>
                   <h4 className='font-semibold text-gray-800 text-sm'>Need Help?</h4>
-                  <p className='text-xs text-gray-500'>We're here to assist you</p>
+                  <p className='text-xs text-gray-500'>We&apos;re here to assist you</p>
                 </div>
               </div>
 

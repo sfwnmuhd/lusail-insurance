@@ -92,7 +92,7 @@ const Header = () => {
           <nav className='px-6 sm:px-20 py-4'>
             <ul className='space-y-2 text-gray-800 text-base'>
               <li>
-                <Link href='/about' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>
+                <Link href='/about' className='block px-2 py-2 rounded-md hover:bg-gray-50 hover:text-[#6C63FF]  focus-visible:outline-offset-2 focus-visible:outline-[#4B1EFF]'>
                   About Us
                 </Link>
               </li>
