@@ -73,10 +73,15 @@ const Header = () => {
                           </div>
                         </li>
                         <li className='flex gap-1 items-center cursor-pointer hover:opacity-80 transition-opacity'>
-                          Claims
-                          
+                          <Link href={"/claims"}>
+                            Claims
+                          </Link>
                         </li>
-                        <li className='items-center  hover:opacity-80 transition-opacity cursor-pointer'>Branches</li>
+                        <li className='items-center  hover:opacity-80 transition-opacity cursor-pointer'>
+                          <Link href={"/branches"}>
+                            Branches
+                          </Link>
+                        </li>
                     </ul>
             </nav>
             <button 
