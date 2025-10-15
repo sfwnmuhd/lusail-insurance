@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -6,6 +7,7 @@ import Footer3 from "@/Components/Footer";
 import DelayedLeadForm from "@/Components/DelayedLeadForm";
 import FloatingWhatsApp from "@/Components/FloatingWhatsapp";
 import SocialMediaPopup from "@/Components/SocialMediaPopUp";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,25 +24,30 @@ export const metadata: Metadata = {
   description: "Find the best insurance in Qatar with Lusail Insurance. 10+ insurers offering competitive prices. Quick, easy & hassle free insurance solutions.",
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        <Header/>
+        <Header />
         <main className="flex-grow">
           {children}
-          <FloatingWhatsApp/>
+          
           <SocialMediaPopup/>
-          <DelayedLeadForm delayMs={5000}/>
+          <FloatingWhatsApp />
+         <DelayedLeadForm delayMs={5000} />
         </main>
         
-        <Footer3/>
+        <Footer3 />
       </body>
     </html>
   );
