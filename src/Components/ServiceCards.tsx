@@ -25,7 +25,7 @@ const allServices = [
 export function ServiceCards() {
   return (
     <section className="bg-[#F0E4E4] py-12 md:py-16 w-full">
-      <div className="container mx-auto px-4 md:px-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-20">
         <Carousel
           opts={{
             align: "start",
