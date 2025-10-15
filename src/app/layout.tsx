@@ -5,6 +5,7 @@ import Header from "@/Components/Header";
 import Footer3 from "@/Components/Footer";
 import DelayedLeadForm from "@/Components/DelayedLeadForm";
 import FloatingWhatsApp from "@/Components/FloatingWhatsapp";
+import SocialMediaPopup from "@/Components/SocialMediaPopUp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
           <FloatingWhatsApp/>
+          <SocialMediaPopup/>
           <DelayedLeadForm delayMs={5000}/>
         </main>
         
