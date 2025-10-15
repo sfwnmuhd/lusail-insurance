@@ -10,7 +10,7 @@ const Header = () => {
   const [expandRenew, setExpandRenew] = React.useState(false)
   return (
     <header className='bg-[#8B1538] sticky z-50 top-0 '>
-      <div className="container mx-auto px-6 sm:px-20 py-2   ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-20 py-2   ">
         <div className='flex items-center justify-between h-20 '>
             <div className='flex items-center justify-center'>
                 <button
